@@ -1,3 +1,7 @@
+body{
+    background: #E5E5E5;
+}
+
 header{
     background: #0A3871;
     padding: 20px 20px;
@@ -6,8 +10,9 @@ header{
 main{
     background: #F3F5FC;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 7%;
-
+    margin: 10px 10%;
+    padding: 10px 10px;
+    border-radius: 32px
 }
 
 main h2{
@@ -24,6 +29,7 @@ main section{
 
 .caja-encriptador{
     width: 60%;
+    height: 390px;
 }
 
 .caja-encriptador textarea {
@@ -52,6 +58,7 @@ main section{
     border-radius: 10px;
     margin: 0 10px 0 0;
     cursor: pointer;
+    vertical-align: top;
 }
 
 .advertencia-minusculas{
