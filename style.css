@@ -85,3 +85,27 @@ main section{
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
+
+#caja-desencriptador-sin-mensaje{
+    display: grid;
+    padding: 10%;
+    place-items: center;
+}
+
+#caja-desencriptador-sin-mensaje img{
+    margin-top: 25%;
+}
+
+#caja-desencriptador-sin-mensaje p{
+    font-weight: bolder;
+    text-align: center;
+    color: #343A40;
+    font-size: 17px;
+}
+
+#caja-desencriptador-sin-mensaje p + p{
+    color: #495057;
+    font-size: 12px;
+    margin-top: 20px;
+    font-weight: normal;
+}
