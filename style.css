@@ -11,7 +11,7 @@ main{
     background: #F3F5FC;
     font-family: 'Montserrat', sans-serif;
     margin: 10px 10%;
-    padding: 10px 10px;
+    padding: 10px 0;
     border-radius: 32px
 }
 
@@ -24,12 +24,13 @@ main h2{
 
 main section{
     display: inline-block;
-    padding: 10px;
 }
 
 .caja-encriptador{
-    width: 60%;
+    margin-left: 4%;
+    width: 59%;
     height: 390px;
+    margin-right: 2%;
 }
 
 .caja-encriptador textarea {
