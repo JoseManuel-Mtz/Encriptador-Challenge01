@@ -26,14 +26,14 @@ main section{
     display: inline-block;
 }
 
-.caja-encriptador{
+.seccion-encriptador{
     margin-left: 4%;
     width: 59%;
     height: 390px;
     margin-right: 2%;
 }
 
-.caja-encriptador textarea {
+.seccion-encriptador textarea {
     display: block;
     width: 100%;
     background: #F3F5FC;
@@ -46,7 +46,7 @@ main section{
     height: 300px;
 }
 
-.caja-encriptador p{
+.seccion-encriptador p{
     margin-top: 5px;
     margin-bottom: 15px;
     font-size: 13px;
@@ -74,4 +74,14 @@ main section{
 #btn-desencriptar{
     background: #D8DFE8;
     color: #0A3871;
+}
+
+.seccion-desencriptador{
+    height: 390px;
+    width: 30%;
+    margin-right: 4%;
+    vertical-align: top;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
 }
