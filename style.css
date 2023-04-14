@@ -65,12 +65,12 @@ main section{
     color: #495057;
 }
 
-.btn-encriptar{
+#btn-encriptar{
     background: #0A3871;
     color: white;
 }
 
-.btn-desencriptar{
+#btn-desencriptar{
     background: #D8DFE8;
     color: #0A3871;
 }
