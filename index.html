@@ -15,19 +15,27 @@
 </head>
 <body>
     <header>
-        <img src="imagenes/logo_alura_full_white.svg" alt="Logo Alura">
+        <img src="imagenes/logo_alura_full_white.svg" height="50px" alt="Logo Alura">
     </header>
 
     <main>
         <h2>Challenge 01. Encriptador con Javascript</h2>
 
-        <textarea name="mensaje" cols="30" rows="10"></textarea>
+        <section class="caja-encriptador">
 
-        <input type="button" value="Encriptar">
+            <textarea name="mensaje" placeholder="Ingrese el texto aqui"></textarea>
 
-        <input type="button" value="Desencriptar">
+            <p class="advertencia-minusculas">⚠ Solo letras minúsculas y sin acentos</p>
 
-        <p id="textoEncritado"></p>
+            <input type="button" value="Encriptar" class="boton btn-encriptar">
+
+            <input type="button" value="Desencriptar" class="boton btn-desencriptar">
+
+        </section>
+
+        <section class="caja-desencriptador">
+            <p id="textoEncritado">Ningún mensaje fue encontrado</p>
+        </section>
 
     </main>
 

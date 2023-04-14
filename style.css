@@ -1,9 +1,67 @@
 header{
-    background-color: #0A3871;
+    background: #0A3871;
     padding: 20px 20px;
 }
 
 main{
     background: #F3F5FC;
     font-family: 'Montserrat', sans-serif;
+    padding: 10px 7%;
+
+}
+
+main h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 20px;
+}
+
+main section{
+    display: inline-block;
+    padding: 10px;
+}
+
+.caja-encriptador{
+    width: 60%;
+}
+
+.caja-encriptador textarea {
+    display: block;
+    width: 100%;
+    background: #F3F5FC;
+    resize: none;
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    border: none;
+    height: 300px;
+}
+
+.caja-encriptador p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.boton {
+    text-align: center;
+    width: 16em;
+    height: 3em;
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.advertencia-minusculas{
+    color: #495057;
+}
+
+.btn-encriptar{
+    background: #0A3871;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
 }
