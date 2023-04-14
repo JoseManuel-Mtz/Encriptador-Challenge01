@@ -54,7 +54,9 @@ main section{
 
 .boton {
     text-align: center;
-    width: 16em;
+    max-width: 16em;
+    min-width: 9em;
+    width: 100%;
     height: 3em;
     border-radius: 10px;
     margin: 0 10px 0 0;
@@ -108,4 +110,25 @@ main section{
     font-size: 12px;
     margin-top: 20px;
     font-weight: normal;
+}
+
+#caja-desencriptador-con-mensaje{
+    padding: 10% 10% 0 10%;
+    display: none;
+    place-items: center;
+}
+
+#caja-desencriptador-con-mensaje p{
+    position: relative;
+    display: block;
+    width: 100%;
+    color: #0A3871;
+    font-style: normal;
+    font-size: 17px;
+    border: none;
+    height: 300px;
+}
+
+#btn-copiar{
+    width: 100%;
 }
