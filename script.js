@@ -13,10 +13,26 @@ function displayCajaMensajeEncriptado() {
     
 }
 
+function displayCajaSinMensajeEncriptado() {
+    let cajaConMensaje = document.getElementById("caja-desencriptador-con-mensaje");
+    let cajaSinMensaje = document.getElementById("caja-desencriptador-sin-mensaje");
+
+    cajaConMensaje.style.display = "none";
+    cajaSinMensaje.style.display = "grid";
+}
+
 
 function encriptar() {
-    displayCajaMensajeEncriptado();
-    mostrarMensaje("")
+    let textoIngresado = document.getElementById("texto-ingresado").value;
+    
+    if(textoIngresado){
+        displayCajaMensajeEncriptado();
+        mostrarMensaje(textoIngresado);
+    }
+    else{
+        displayCajaSinMensajeEncriptado();
+    }
+
 }
 
 let botonEncriptar = document.getElementById("btn-encriptar");
