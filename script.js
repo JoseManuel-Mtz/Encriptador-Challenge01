@@ -24,10 +24,20 @@ function displayCajaSinMensajeEncriptado() {
 
 function encriptar() {
     let textoIngresado = document.getElementById("texto-ingresado").value;
-    
     if(textoIngresado){
+
+        let textoEncriptado = "";
+        for (let index = 0; index < textoIngresado.length; index++) {
+            if(llaves[textoIngresado[index]]){
+                textoEncriptado += llaves[textoIngresado[index]];
+            }
+            else{
+                textoEncriptado += textoIngresado[index];
+            }
+        }
+
         displayCajaMensajeEncriptado();
-        mostrarMensaje(textoIngresado);
+        mostrarMensaje(textoEncriptado);
     }
     else{
         displayCajaSinMensajeEncriptado();
@@ -52,6 +62,8 @@ function copiar() {
     navigator.clipboard.writeText(texto);
 }
 
+
+var llaves = {'a':"ai", 'e':"enter", 'i':"imes", 'o':"ober", 'u':'ufat'}
 
 let botonEncriptar = document.getElementById("btn-encriptar");
 let botonDesencriptar = document.getElementById("btn-desencriptar");
