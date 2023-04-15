@@ -21,7 +21,6 @@ function displayCajaSinMensajeEncriptado() {
     cajaSinMensaje.style.display = "grid";
 }
 
-
 function encriptar() {
     let textoIngresado = document.getElementById("texto-ingresado").value;
     if(textoIngresado){
@@ -46,11 +45,17 @@ function encriptar() {
 }
 
 function desencriptar(){
-    let textoIngresado = document.getElementById("texto-ingresado").value;
-    
-    if(textoIngresado){
+    let texto = document.getElementById("texto-ingresado").value;
+
+    if(texto){
+
+        for(const[indice,valor] of Object.entries(llaves)){
+            textoDesencriptado = texto.replaceAll(valor,indice);
+            texto = textoDesencriptado;
+        }
+
         displayCajaMensajeEncriptado();
-        mostrarMensaje(textoIngresado);
+        mostrarMensaje(texto);
     }
     else{
         displayCajaSinMensajeEncriptado();
