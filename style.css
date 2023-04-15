@@ -33,17 +33,22 @@ main section {
     margin-right: 2%;
 }
 
-.seccion-encriptador textarea {
+textarea{
     display: block;
     width: 100%;
-    background: #F3F5FC;
     resize: none;
     color: #0A3871;
     font-style: normal;
+    height: 350px;
+    border: none;
+    overflow: scroll;
+    word-wrap: break-word;
+}
+
+.seccion-encriptador textarea {
+    background: #F3F5FC;
     font-weight: 400;
     font-size: 25px;
-    border: none;
-    height: 350px;
 }
 
 .seccion-encriptador p {
@@ -122,15 +127,9 @@ main section {
     place-items: center;
 }
 
-#caja-desencriptador-con-mensaje p {
+#caja-desencriptador-con-mensaje textarea {
     position: relative;
-    display: block;
-    width: 100%;
-    color: #0A3871;
-    font-style: normal;
     font-size: 17px;
-    border: none;
-    height: 350px;
 }
 
 #btn-copiar {
