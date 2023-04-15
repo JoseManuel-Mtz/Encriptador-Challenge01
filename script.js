@@ -48,4 +48,7 @@ function desencriptar(){
 }
 
 let botonEncriptar = document.getElementById("btn-encriptar");
+let botonDesencriptar = document.getElementById("btn-desencriptar");
+
 botonEncriptar.onclick = encriptar;
+botonDesencriptar.onclick = desencriptar;
