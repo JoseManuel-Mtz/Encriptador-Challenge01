@@ -1,24 +1,16 @@
 
 function mostrarMensaje (texto){
-    let cajaMensaje = document.getElementById("mensaje-procesado");
-    cajaMensaje.value = texto;
+    document.getElementById("mensaje-procesado").value = texto;
 }
 
 function displayCajaMensajeEncriptado() {
-    let cajaConMensaje = document.getElementById("caja-desencriptador-con-mensaje");
-    let cajaSinMensaje = document.getElementById("caja-desencriptador-sin-mensaje");
-
-    cajaSinMensaje.style.display = "none";
-    cajaConMensaje.style.display = "grid";
-    
+    document.getElementById("caja-desencriptador-sin-mensaje").style.display = "none";
+    document.getElementById("caja-desencriptador-con-mensaje").style.display = "grid";
 }
 
 function displayCajaSinMensajeEncriptado() {
-    let cajaConMensaje = document.getElementById("caja-desencriptador-con-mensaje");
-    let cajaSinMensaje = document.getElementById("caja-desencriptador-sin-mensaje");
-
-    cajaConMensaje.style.display = "none";
-    cajaSinMensaje.style.display = "grid";
+    document.getElementById("caja-desencriptador-con-mensaje").style.display = "none";
+    document.getElementById("caja-desencriptador-sin-mensaje").style.display = "grid";
 }
 
 function encriptar() {
@@ -26,6 +18,7 @@ function encriptar() {
     if(textoIngresado){
 
         let textoEncriptado = "";
+
         for (let index = 0; index < textoIngresado.length; index++) {
             if(llaves[textoIngresado[index]]){
                 textoEncriptado += llaves[textoIngresado[index]];
@@ -50,7 +43,7 @@ function desencriptar(){
     if(texto){
 
         for(const[indice,valor] of Object.entries(llaves)){
-            textoDesencriptado = texto.replaceAll(valor,indice);
+            let textoDesencriptado = texto.replaceAll(valor,indice);
             texto = textoDesencriptado;
         }
 
@@ -70,10 +63,6 @@ function copiar() {
 
 var llaves = {'a':"ai", 'e':"enter", 'i':"imes", 'o':"ober", 'u':'ufat'}
 
-let botonEncriptar = document.getElementById("btn-encriptar");
-let botonDesencriptar = document.getElementById("btn-desencriptar");
-let botonCopiar = document.getElementById("btn-copiar");
-
-botonEncriptar.onclick = encriptar;
-botonDesencriptar.onclick = desencriptar;
-botonCopiar.onclick = copiar;
+document.getElementById("btn-encriptar").onclick = encriptar;
+document.getElementById("btn-desencriptar").onclick = desencriptar;
+document.getElementById("btn-copiar").onclick = copiar;
