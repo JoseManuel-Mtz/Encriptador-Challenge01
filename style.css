@@ -1,13 +1,13 @@
-body{
+body {
     background: #E5E5E5;
 }
 
-header{
+header {
     background: #0A3871;
     padding: 20px 20px;
 }
 
-main{
+main {
     background: #F3F5FC;
     font-family: 'Montserrat', sans-serif;
     margin: 10px 10%;
@@ -15,21 +15,21 @@ main{
     border-radius: 32px
 }
 
-main h2{
+main h2 {
     font-size: 35px;
     font-weight: bold;
     text-align: center;
     padding: 0 0 20px;
 }
 
-main section{
+main section {
     display: inline-block;
 }
 
-.seccion-encriptador{
+.seccion-encriptador {
     margin-left: 4%;
     width: 59%;
-    height: 390px;
+    height: 450px;
     margin-right: 2%;
 }
 
@@ -43,10 +43,10 @@ main section{
     font-weight: 400;
     font-size: 25px;
     border: none;
-    height: 300px;
+    height: 350px;
 }
 
-.seccion-encriptador p{
+.seccion-encriptador p {
     margin-top: 5px;
     margin-bottom: 15px;
     font-size: 13px;
@@ -64,22 +64,22 @@ main section{
     vertical-align: top;
 }
 
-.advertencia-minusculas{
+.advertencia-minusculas {
     color: #495057;
 }
 
-#btn-encriptar{
+#btn-encriptar {
     background: #0A3871;
     color: white;
 }
 
-#btn-desencriptar{
+#btn-desencriptar {
     background: #D8DFE8;
     color: #0A3871;
 }
 
-.seccion-desencriptador{
-    height: 390px;
+.seccion-desencriptador {
+    height: 450px;
     width: 30%;
     margin-right: 4%;
     vertical-align: top;
@@ -88,37 +88,37 @@ main section{
     border-radius: 32px;
 }
 
-#caja-desencriptador-sin-mensaje{
+#caja-desencriptador-sin-mensaje {
     display: grid;
     padding: 10%;
     place-items: center;
 }
 
-#caja-desencriptador-sin-mensaje img{
+#caja-desencriptador-sin-mensaje img {
     margin-top: 25%;
 }
 
-#caja-desencriptador-sin-mensaje p{
+#caja-desencriptador-sin-mensaje p {
     font-weight: bolder;
     text-align: center;
     color: #343A40;
     font-size: 17px;
 }
 
-#caja-desencriptador-sin-mensaje p + p{
+#caja-desencriptador-sin-mensaje p+p {
     color: #495057;
     font-size: 12px;
     margin-top: 20px;
     font-weight: normal;
 }
 
-#caja-desencriptador-con-mensaje{
+#caja-desencriptador-con-mensaje {
     padding: 10% 10% 0 10%;
     display: none;
     place-items: center;
 }
 
-#caja-desencriptador-con-mensaje p{
+#caja-desencriptador-con-mensaje p {
     position: relative;
     display: block;
     width: 100%;
@@ -129,6 +129,39 @@ main section{
     height: 300px;
 }
 
-#btn-copiar{
+#btn-copiar {
     width: 100%;
+}
+
+footer {
+    margin-top: 30px;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.redes {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.redes:hover {
+    opacity:1;
+}
+
+#datos-desarrollador {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 0;
 }
