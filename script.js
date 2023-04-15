@@ -58,7 +58,7 @@ function desencriptar(){
 }
 
 function copiar() {
-    let texto = document.getElementById("mensaje-procesado").textContent;
+    let texto = document.getElementById("mensaje-procesado").value;
     navigator.clipboard.writeText(texto);
 }
 
