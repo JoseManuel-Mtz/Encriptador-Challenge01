@@ -35,5 +35,17 @@ function encriptar() {
 
 }
 
+function desencriptar(){
+    let textoIngresado = document.getElementById("texto-ingresado").value;
+    
+    if(textoIngresado){
+        displayCajaMensajeEncriptado();
+        mostrarMensaje(textoIngresado);
+    }
+    else{
+        displayCajaSinMensajeEncriptado();
+    }
+}
+
 let botonEncriptar = document.getElementById("btn-encriptar");
 botonEncriptar.onclick = encriptar;
