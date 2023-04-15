@@ -47,8 +47,16 @@ function desencriptar(){
     }
 }
 
+function copiar() {
+    let texto = document.getElementById("mensaje-procesado").textContent;
+    navigator.clipboard.writeText(texto);
+}
+
+
 let botonEncriptar = document.getElementById("btn-encriptar");
 let botonDesencriptar = document.getElementById("btn-desencriptar");
+let botonCopiar = document.getElementById("btn-copiar");
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
+botonCopiar.onclick = copiar;
