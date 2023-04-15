@@ -1,7 +1,7 @@
 
 function mostrarMensaje (texto){
     let cajaMensaje = document.getElementById("mensaje-procesado");
-    cajaMensaje.textContent = texto;
+    cajaMensaje.value = texto;
 }
 
 function displayCajaMensajeEncriptado() {
