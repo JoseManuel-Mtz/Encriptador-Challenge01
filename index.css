@@ -223,6 +223,20 @@ footer {
 
     .seccion-desencriptador button {
         margin-top: 10px;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .seccion-encriptador textarea {
+        height: 200px;
     }
 
+    .seccion-encriptador .area-botones{
+        display: block;
+    }
+
+    .seccion-desencriptador{
+        height: 150px;
+    }
 }
