@@ -194,5 +194,35 @@ footer {
 }
 
 @media screen and (max-width: 850px){
+    main div:first-of-type{
+        flex-direction: column;
+    }
+
+    .seccion-encriptador{
+        width: auto;
+    }
+
+    .seccion-desencriptador{
+        width: auto;
+        height: 250px;
+        margin: 5% 0;
+        align-items: flex-start;
+    }
+
+    .seccion-desencriptador h3{
+        margin-top: 10%;
+    }
+
+    #img-sin-mensaje-encontrado{
+        display: none;
+    }
+
+    .seccion-desencriptador textarea{
+        padding: 2%;
+    }
+
+    .seccion-desencriptador button {
+        margin-top: 10px;
+    }
 
 }
