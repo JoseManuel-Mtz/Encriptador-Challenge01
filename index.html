@@ -6,7 +6,7 @@
     <title>Sprint01 - Encriptador</title>
 
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,47 +15,49 @@
 </head>
 <body>
     <header>
-        <img src="imagenes/alura-full-logo.svg" height="30px" alt="Logo Alura">
+        <img src="imagenes/alura-full-logo.svg" alt="Logo Alura" id="logo-alura-completo">
     </header>
 
     <main>
         <h2>Challenge 01. Encriptador con Javascript</h2>
 
-        <section class="seccion-encriptador">
+        <div>
+            <section class="seccion-encriptador">
 
-            <textarea name="mensaje" placeholder="Ingrese el texto aqui" id="texto-ingresado"></textarea>
-
-            <p class="advertencia-minusculas">⚠ Solo letras minúsculas y sin acentos</p>
-
-            <button id="btn-encriptar" class="boton">Encriptar</button>
-            
-            <button id="btn-desencriptar" class="boton">Desencriptar</button>
-
-        </section>
-
-        <section class="seccion-desencriptador">
-
-            <div id="caja-desencriptador-sin-mensaje">
-                <img src="imagenes/muneco_not_text_found.svg" alt="Ningún mensaje fue encontrado" height="150px">
-
-                <p>Ningún mensaje fue encontrado</p>
-
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-            </div>
-
-            <div id="caja-desencriptador-con-mensaje">
-                <textarea id="mensaje-procesado"></textarea>
-
-                <button id="btn-copiar" class="boton">Copiar</button>
-            </div>
-
-        </section>
+                <textarea name="mensaje" placeholder="Ingrese el texto aqui" id="texto-ingresado"></textarea>
+    
+                <p class="advertencia-minusculas">⚠ Solo letras minúsculas y sin acentos</p>
+    
+                <button id="btn-encriptar" class="boton">Encriptar</button>
+                
+                <button id="btn-desencriptar" class="boton">Desencriptar</button>
+    
+            </section>
+    
+            <section class="seccion-desencriptador">
+    
+                <div id="caja-desencriptador-sin-mensaje">
+                    <img id="img-sin-mensaje-encontrado" src="imagenes/muneco_not_text_found.svg" alt="Ningún mensaje fue encontrado">
+    
+                    <h3>Ningún mensaje fue encontrado</h3>
+    
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+    
+                <div id="caja-desencriptador-con-mensaje">
+                    <textarea id="mensaje-procesado" readonly></textarea>
+    
+                    <button id="btn-copiar" class="boton">Copiar</button>
+                </div>
+    
+            </section>
+        </div>
 
     </main>
 
     <footer>        
-        <a href="#"><img src="imagenes/github-logo.svg" alt="Github" height="25px" class="redes"></a>
-        <a href="#"><img src="imagenes/linkedin-logo.svg" alt="LinckedIn" height="25px" class="redes"></a>
+        <a href="#"><img src="imagenes/github-logo.svg" alt="Github" class="redes"></a>
+        <a href="#"><img src="imagenes/linkedin-logo.svg" alt="LinckedIn" class="redes"></a>
 
         <p id = "datos-desarrollador">José Manuel Martínez Martínez</p>
     </footer>

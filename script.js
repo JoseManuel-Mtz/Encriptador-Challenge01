@@ -5,12 +5,12 @@ function mostrarMensaje (texto){
 
 function displayCajaMensajeEncriptado() {
     document.getElementById("caja-desencriptador-sin-mensaje").style.display = "none";
-    document.getElementById("caja-desencriptador-con-mensaje").style.display = "grid";
+    document.getElementById("caja-desencriptador-con-mensaje").style.display = "flex";
 }
 
 function displayCajaSinMensajeEncriptado() {
     document.getElementById("caja-desencriptador-con-mensaje").style.display = "none";
-    document.getElementById("caja-desencriptador-sin-mensaje").style.display = "grid";
+    document.getElementById("caja-desencriptador-sin-mensaje").style.display = "block";
 }
 
 function encriptar() {
